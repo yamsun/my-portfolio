@@ -2,7 +2,9 @@
 
 :root {
     --primary-color: #F87171;
+    --hover-color: #f75555;
     --off-white: #E5E7EB;
+    --off-white-hover: #d4d7de;
     --dark-gray: #6B7280;
 }
 
@@ -47,6 +49,7 @@ hr {
     margin: 1rem 1rem 1rem 0rem;
 }
 
+
 .link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
@@ -77,6 +80,8 @@ hr {
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .navigation .nav-brand {
@@ -98,7 +103,10 @@ hr {
 }
 
 .navigation .link-active {
-    font-weight: bold;
+    /* font-weight:bolder; */
+    text-transform: uppercase;
+    /* font-style:oblique; */
+    /* font-family: monospace; */
 }
 
 /** header **/
@@ -139,7 +147,8 @@ hr {
 
 .ow {
     background-color: var(--off-white);
-}
+    border-radius: 1rem;
+    }
 
 /** footers **/
 
@@ -172,4 +181,59 @@ hr {
 /** blogs **/
 .showcase-blog {
     padding-bottom: 6rem;
+}
+
+/* All hover effects */
+
+.navigation:hover{
+    background-color: var(--hover-color);
+    transition: 1s;
+    
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navigation .nav-brand:hover{
+    font-weight:bold;
+    transition: 0.3s;
+}
+
+.footer:hover {
+    
+    background-color: var(--hover-color);
+    transition: 1s;
+
+  }
+
+  /* .link:hover
+{
+    text-decoration:yellow;
+    font-weight: bolder;
+} */
+
+
+.footer .link:hover {
+    font-weight: bolder;
+}
+.navigation .link:hover{
+    font-weight: bold;
+
+}
+/* .ow:hover{
+    background-color: var(--off-white-hover);
+} */
+.link-primary:hover {
+    background-color: var(--hover-color);
+    border-radius: 0em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.link-secondary:hover {
+    color: var(--hover-color);
+    border-radius: 0rem;
+    border: 1px solid var(--hover-color);
+    /* display: block; */
+    /* max-width: 140px; */
+    /* margin: 1rem 1rem 1rem 0rem; */
+    font-weight: bold;
+    transition: 0.5s;
 }
