@@ -187,7 +187,7 @@ hr {
 
 .navigation:hover{
     background-color: var(--hover-color);
-    transition: 1s;
+    transition: 0.7s;
     
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -200,7 +200,7 @@ hr {
 .footer:hover {
     
     background-color: var(--hover-color);
-    transition: 1s;
+    transition: 0.7s;
 
   }
 
@@ -213,9 +213,17 @@ hr {
 
 .footer .link:hover {
     font-weight: bolder;
+    transition: 0.2s;
+    /* background-color:var(--primary-color); */
+    /* border-radius: 2rem; */
 }
 .navigation .link:hover{
-    font-weight: bold;
+    /* font-weight:700; */
+    /* text-transform: capitalize; */
+    background-color:var(--primary-color);
+    /* color:var(--primary-color); */
+    border-radius: 0.7em;
+    transition: 0.5s;
 
 }
 /* .ow:hover{
